@@ -15,15 +15,19 @@
 		<lable for="email">Email 
 			<input type="email" required id="email" placeholder="Email">
 		</lable><br>
-		<p>Gender:</p>
+		<label>Gender</label>
 		  <label>
-		    <input type="radio" name="gender" value="male"> Male
+		    <input type="radio" name="gender" value="male" id="gender_m" required> Male
 		  </label>
 		  <label>
-		    <input type="radio" name="gender" value="female"> Female
+		    <input type="radio" name="gender" value="female" id="gender_f" required> Female
 		  </label><br>
 		<label for="cars">Car Brands 
-			<input type="select" required id="cars" placeholder="--Please choose an option--">
+			<select id="cars" name="cars" required>
+			    <option value="">--Please choose an option--</option>
+			    <option value="toyota">Toyota</option>
+			    <option value="honda">Honda</option>
+		    </select>
 		</label><br>
 		<label for="age">Age
 			<input type="number" required id="age" placeholder="Age">
